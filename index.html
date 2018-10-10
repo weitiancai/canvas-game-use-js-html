@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>let the bullet fly</title>
+	<style>
+/*	id选择器*/
+		#controller{
+			display:none;
+			position:absolute;
+			top:50px;
+			left:90px;
+			background-color:rgba(0,85,116,0.7);
+			padding: 5px 20px 25px 20px;
+			border-radius:10px 10px;
+		}
+		.begin{
+			font-family:微软雅黑;
+			font-size:50px;
+			font-weight:bolder;
+			font-style:italic;
+			color:#B03060;
+			display:block;
+			position:absolute;
+			background-color:rgba(150,156,130,0.7);
+			padding: 5px 20px 25px 20px;
+			border-radius:10px 10px;
+		}
+		#begin-game{
+			top:190px;
+			left:900px;
+		}
+		#background-game{
+			top:390px;
+			left:900px;
+		}
+		#how-to-play
+		{
+			top:590px;
+			left:900px;
+		}
+		#turn-to-lastpage{
+			background-color:rgba(150,156,130,0);
+			display:none;
+			position:absolute;
+			top:50px;
+			left:1380px;
+			width:50px;
+			height:50px;
+		}
+		#ai-button{
+			display:none;
+			position:absolute;
+			top:500px;
+			left:100px;
+			width:100px;
+			height:100px;
+		}
+		#small_canvas{
+			background-color:rgba(150,156,130,0.7);
+			display:none;
+			position:absolute;
+			left:90px;
+			top:810px;
+		}
+		a{
+			text-decoration:none;//取消下划线
+		}
+		input{
+			background-color:#68838B;
+			color:#0A0A0A;
+			width:80px;
+			height:30px;
+			cursor:pointer;
+			font-weight:bold;
+			border-radius:8px;
+		}
+		input:active{color:purple;} /*按下时紫色*/
+		audio{
+			position:absolute;
+			left:90px;
+			top:840px;
+		}
+	</style>
+</head>
+<body>
+
+		<canvas id="canvas" width="1345" height="748" style="border:5px dashed gray;display:block;margin:50px auto">
+			Canvas not suppoted;
+		</canvas>
+		<canvas id="small_canvas" width=1340 height="30">
+			Canvas not supported!
+		</canvas>
+		<div id="controller">
+			<input id="one" type="button" value="第一关">
+			<input id="two" type="button" value="第二关">
+			<input id="three" type="button" value="第三关">
+			<input id="four" type="button" value="第四关">
+			<input id="five" type="button" value="第五关">
+			<input id="six" type="button" value="第六关">
+			<input id="seven" type="button" value="第七关">
+			<input id="eight" type="button" value="第八关">
+			<input id="nine" type="button" value="第九关">
+			<input id="ten" type="button" value="第十关"><br/><br/>
+			<input id="eleven" type="button" value="第十一关">
+			<input id="twelve" type="button" value="第十二关">
+			<input id="thirteen" type="button" value="第十三关">
+			<input id="fourteen" type="button" value="第十四关">
+			<input id="fifteen" type="button" value="第十五关">
+			<input id="sixteen" type="button" value="第十六关">
+			<input id="seventeen" type="button" value="第十七关">
+			<input id="eighteen" type="button" value="第十八关">
+			<input id="nineteen" type="button" value="第十九关">
+			<input id="twenty" type="button" value="第二十关"><br/><br/>
+			<input id="t21" type="button" value="第二十一关">
+			<input id="t22" type="button" value="第二十二关">
+			<input id="t23" type="button" value="第二十三关">
+			<input id="t24" type="button" value="第二十四关">
+			<input id="t25" type="button" value="第二十五关">
+			<input id="t26" type="button" value="第二十六关">
+			<input id="t27" type="button" value="第二十七关">
+			<input id="t28" type="button" value="第二十八关">
+			<input id="t29" type="button" value="第二十九关">
+			<input id="t30" type="button" value="第三十关">
+		</div>
+		<div class="begin" id="begin-game">
+			<a href="#" id="begin_game">开始游戏</a>
+		</div><br/>
+		<div class="begin" id="background-game">
+			<a href="#" id="background_game">游戏背景</a>
+		</div><br/>
+		<div class="begin" id="how-to-play">
+			<a href="#" id="how_to_play">游戏操作</a>
+		</div>
+		<div>
+			<input type="image" src="picture/turn to lastpage.png" 
+			id="turn-to-lastpage"/>
+		</div>
+		<input id="ai-button" class="begin" type="image" src="picture/AI.png">
+		<audio src="music/illuminate.mp3" loop="loop" controls="controls" autoplay="autoplay">
+	<script src="js/sprites.js"></script>
+	<script src="js/chapter.js"></script>
+	<script src="js/requestNextAnimationFrame.js"></script>
+	<script src="js/tools.js"></script>
+	<script src="js/arrow.js"></script>
+	<script src="js/let the bullet fly.js"></script>
+
+</body>
+</html>
